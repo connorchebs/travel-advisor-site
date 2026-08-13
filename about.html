@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | VoyageCurator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Noto+Serif:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed": "#dae2fd",
+                      "surface-container-low": "#eff4ff",
+                      "on-primary-fixed": "#131b2e",
+                      "primary-container": "#131b2e",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "background": "#f8f9ff",
+                      "on-tertiary-fixed": "#191c1e",
+                      "on-secondary-fixed-variant": "#005049",
+                      "surface-dim": "#cbdbf5",
+                      "secondary-fixed": "#89f5e7",
+                      "surface-container-highest": "#d3e4fe",
+                      "inverse-primary": "#bec6e0",
+                      "on-surface-variant": "#45464d",
+                      "on-surface": "#0b1c30",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f8f9ff",
+                      "on-background": "#0b1c30",
+                      "on-secondary-fixed": "#00201d",
+                      "tertiary-container": "#191c1e",
+                      "surface": "#f8f9ff",
+                      "surface-container": "#e5eeff",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "secondary": "#006a61",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#000000",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#6bd8cb",
+                      "surface-container-high": "#dce9ff",
+                      "primary-fixed-dim": "#bec6e0",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#006f66",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "on-tertiary-container": "#818486",
+                      "outline": "#76777d",
+                      "tertiary": "#000000",
+                      "surface-tint": "#565e74",
+                      "on-primary-container": "#7c839b",
+                      "inverse-surface": "#213145",
+                      "tertiary-fixed": "#e0e3e5",
+                      "surface-variant": "#d3e4fe",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#c6c6cd",
+                      "secondary-container": "#86f2e4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "section-gap": "80px",
+                      "base": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "48px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": [
+                              "Noto Serif"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-sm": [
+                              "Noto Serif"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Noto Serif"
+                      ],
+                      "display-lg": [
+                              "Noto Serif"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container pt-20">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-surface/90 backdrop-blur-md dark:bg-surface-container-lowest/90 font-body-md text-body-md fixed top-0 w-full z-50 shadow-sm dark:shadow-none transition-all duration-300">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<!-- Brand Logo -->
+<a class="font-headline-sm text-headline-sm font-bold text-on-surface dark:text-on-surface hover:text-secondary transition-colors duration-300" href="index.html">
+                VoyageCurator
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-300" href="services.html">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary hover:text-secondary transition-colors duration-300" href="about.html">About Us</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-300" href="contact.html">Contact Us</a>
+</div>
+<!-- Trailing Action (Desktop) -->
+<div class="hidden md:flex">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:bg-on-surface-variant transition-colors duration-300">
+                    Plan My Trip
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface-variant hover:text-secondary transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 z-10 relative">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-6">Curating Extraordinary Journeys.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
+                    We believe travel is more than a destination; it's an art form. At VoyageCurator, we meticulously design bespoke itineraries that transform your wanderlust into profound, unforgettable experiences.
+                </p>
+</div>
+<div class="lg:col-span-6 relative z-0 mt-12 lg:mt-0">
+<div class="relative rounded-xl overflow-hidden shadow-[0_10px_30px_-5px_rgba(0,106,97,0.1)] aspect-[4/3]">
+<div class="bg-cover bg-center w-full h-full transform hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A breathtaking, wide-angle landscape shot of a serene mountain lake at sunrise. The water is crystal clear, reflecting the rugged peaks and the soft pastel hues of the dawn sky. A solitary, elegant wooden rowboat rests gently near the shore. The scene embodies a sense of tranquility, luxury, and untouched natural beauty, perfectly aligning with a premium travel aesthetic. The lighting is soft, warm, and inviting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSflE5sEtZ4M34m1LqGxeHD_vhgycj-5DWxwUaxqlrlsnNemqGxOghIwagHrOntE4NTo6KnGLgF4XODul-rzjTDAd9yFYeFPjwEfOsVAru5vTKCqCfz1gnP6enDvs8CrUv364opUpb3yHhU5dqhLG2IOU2L-_UuEvDUFKBK5DO2bADKl8nsVrAqPllau7lyoNbpFCulG7LPVKbJlRfJc2228_vD7ZdxUPXwmdd4fVuiQVAkg5iOqglaw')"></div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-surface-container-highest rounded-full blur-3xl opacity-50 -z-10"></div>
+</div>
+</div>
+</header>
+<!-- Our Mission Section -->
+<section class="bg-surface-container-low py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-gutter md:items-start">
+<div class="md:w-1/3">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 relative inline-block">
+                        Our Mission
+                        <span class="absolute -bottom-2 left-0 w-12 h-1 bg-secondary rounded-full"></span>
+</h2>
+</div>
+<div class="md:w-2/3 md:pl-12 border-l border-outline-variant/30">
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                        To elevate the art of travel by providing unparalleled, personalized advisory services. We strive to connect discerning travelers with the world's most captivating destinations, cultures, and experiences, fostering a deeper understanding and appreciation of our global tapestry.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        We don't just book trips; we architect memories. By intimately understanding your preferences, passions, and pace, we curate itineraries that feel entirely intuitive and extraordinary, ensuring every moment of your journey is flawlessly executed.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Brief History Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface">Our Journey</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-2xl mx-auto">A legacy built on a passion for exploration and a commitment to excellence.</p>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-outline-variant/30"></div>
+<div class="space-y-16">
+<!-- Event 1 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-5/12 text-right md:pr-12 mb-8 md:mb-0">
+<div class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-surface z-10 group-hover:scale-125 transition-transform duration-300"></div>
+<span class="font-label-md text-label-md text-secondary block mb-2">2010</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">The Inception</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Founded with a vision to offer bespoke travel experiences that transcend standard packages.</p>
+</div>
+<div class="md:w-5/12 md:pl-12">
+<div class="rounded-lg overflow-hidden shadow-sm aspect-video">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="A vintage-style sepia or warm-toned photograph of an old, beautifully crafted leather travel journal sitting on a rustic wooden desk beside a classic brass compass and a cup of steaming coffee. The image evokes a sense of nostalgia, the beginning of a grand adventure, and the timeless romance of travel planning. The lighting is soft and intimate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfcP4IyTVDy3kQrc6pSGERQvLOzBQAnZ0VPHG2v7wxeMhykOaJXGTJnC9uPnWNcD9LsjiqLA7mgV8UK7czcz40QIrH1RFc-1FdR-Z81etMRKiZZ7Zhksx7xWIhBVg29H04WxZq50_eCT-EzUlYNjWDNCzNEK8PYW8xP4Pv34VJGoTXp1hMq3rd96wqPbN5gABB909f58djUnWz8Pqwhxj6eHfpiTMfKBwzXyIb-gxateEI7pTzaHMDGQ')"></div>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
+<div class="md:w-5/12 text-left md:pl-12 mb-8 md:mb-0">
+<div class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-surface z-10 group-hover:scale-125 transition-transform duration-300"></div>
+<span class="font-label-md text-label-md text-secondary block mb-2">2016</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Global Expansion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Expanded our network of on-the-ground partners to over 50 countries, ensuring authentic local experiences.</p>
+</div>
+<div class="md:w-5/12 md:pr-12">
+<div class="rounded-lg overflow-hidden shadow-sm aspect-video">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="A dynamic, high-angle shot of a bustling European cobblestone square at golden hour. People are sitting at outdoor cafes, and historic architecture surrounds the plaza. The image captures the vibrant energy of global travel and cultural immersion. The lighting is warm, casting long shadows, and the mood is lively yet sophisticated, fitting a premium travel brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAA0cS19565T0XSXXUQzjFrc9ny_y7-zvmqgbFP8cY1vsX4QesCQIy70iz0PqInEm2qo2onNpLpSM1kwAcB7b0cgS1MSEFhHHC4cgpt6R3cj9p4kB7PnJDlBiPTualG5lk45KDrom_xa4qTamGL4VfxtRcVK-2aNhPjQSjM1p5HfvW9UEbUkJZXfsAtSLG8TQbwRB7HvuZ3Ps9pOZl4LAC8TzdUMt4iquyaDBi55jVaiJ5S62oFajW1DA')"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="bg-surface-container-highest py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface">Meet the Curators</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-2xl mx-auto">The passionate experts behind your extraordinary journeys.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Team Member 1 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_30px_-5px_rgba(11,28,48,0.05)] hover:-translate-y-2 transition-transform duration-300 group">
+<div class="aspect-square relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A professional, modern headshot of a confident woman in her early 40s. She is smiling warmly at the camera. She is wearing a smart-casual navy blazer over a crisp white shirt. The background is a soft, out-of-focus modern office setting with a hint of greenery. The lighting is bright and flattering, conveying approachability and expertise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAHaPpdegf8QOcky_Ha5dSBEwxqf2saTyuSec9KHmfpwT5RQx7Nc4rBX07LelljPHpIXvXiJ0Q2eHU_p-Ns14weamcvxKLQL6nFNQHuDZ2GoHKYurOKvLqnw042_LKabjGtOcwaajcwlHD7-oovnVZcHL6BQfJUsF9AqSaagM6m58ejYizq206hhwFPfZR0fLd8qAJ4Uv0acZ7SDJuCDrZPjOVv4XGLGPVcjDmxzEzzf36xZ3oyBmIzw')"></div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Eleanor Vance</h3>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-3">Founder &amp; Principal Advisor</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Expertise: Luxury Safaris, Culinary Tours</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_30px_-5px_rgba(11,28,48,0.05)] hover:-translate-y-2 transition-transform duration-300 group">
+<div class="aspect-square relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A professional headshot of a friendly man in his late 30s. He has short, styled hair and a neat beard, wearing a tailored light gray suit with a subtly patterned shirt. He is smiling engagingly. The background is a soft, blurred urban cityscape, suggesting a cosmopolitan vibe. The lighting is bright, natural, and highly professional." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEhr3q0AfoUYWEttFiXsXyxQXJV9Jh2k_ugGkyEs80ONNajaPAhXb8PMHVdtl7amIx4J--nErIghjBmfZDHbfzhS2Mp1dDklpNv2bPglhumjS_L5cirHCFrD5KsL5IQsAktBNV2iwZ5_vjUu7YMFXv7Sr1eYazYdXm52Fp1KG3Gz1iiP8cq2J11MNi9axxO2ZcGOlZuoHc8_GbdL_iku6p2IOrtu65EEDCAx446nNb0-0adacc7ZYgQw')"></div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Julian Thorne</h3>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-3">Director of Itineraries</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Expertise: European Heritage, Wine Regions</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_30px_-5px_rgba(11,28,48,0.05)] hover:-translate-y-2 transition-transform duration-300 group">
+<div class="aspect-square relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A professional, vibrant headshot of a woman in her 30s with an infectious smile. She has dark hair styled elegantly and is wearing a chic, minimalist olive-green top. The background is a bright, soft-focus studio setting with warm light, conveying a sense of energy and meticulous planning. The overall aesthetic is modern and sophisticated." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBU7nPc3Ndk1Z6JryUOfb47Z92h4haIcoERI60imvjh14ZdIzXcFaT_o5ymYFyixJe5L7Jpy-CvbctdpnnZbhekIDL3PjeK5FOd0YCEcxekbxU3bYr1C7yTjUIzKct9Jbm22i7yjNj8PhR-s_kioXSjFZcb_abGMG5vqMNAX8XVOASahyr8J9nDdrINcEgMq01J-JAy8RRY5h6SqCaOjQbGRByp1lUwSmN5LrvVkJki3z9ZCZbNCv8luQ')"></div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Maya Patel</h3>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-3">Senior Destination Specialist</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Expertise: Southeast Asia, Wellness Retreats</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-[0_10px_30px_-5px_rgba(11,28,48,0.05)] hover:-translate-y-2 transition-transform duration-300 group">
+<div class="aspect-square relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A distinguished professional headshot of a man in his 50s with a warm, seasoned expression. He is wearing a classic tweed jacket over a light blue shirt. The background is a softly blurred, sophisticated library or study setting, implying deep knowledge and extensive experience. The lighting is rich and inviting, emphasizing trust and authority." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJ8hMtOpeVZpnRMaJ_r4k1ZotPVpjyGos-LhJo-W9lw8PkH9_yIn_QHVQXx0pz5f0fBvFeKBZ76s_B4-VuZukNxBk-0oaXsqCRzAiC7c5Hy2q7GSoJtWKEcydm-FlBc2iSKV5FNx2kSOck5bdGrGDP7olm-k8WQqHzwNo-sgMo2z2vCUQrD40cj5gcPHPPGiBJhVEvX3poXlzb2K_S-jXmIfepHBcg1pqP92lMdcFwsVJ6fF5CLkgAhw')"></div>
+</div>
+<div class="p-6 text-center">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Arthur Pendelton</h3>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-3">Head of Concierge Services</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Expertise: Private Villas, Yacht Charters</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-highest dark:bg-tertiary-container text-on-surface dark:text-on-tertiary-fixed font-body-md text-body-md w-full py-section-gap flat no shadows">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand -->
+<div class="md:col-span-1 mb-8 md:mb-0">
+<a class="font-headline-md text-headline-md text-primary dark:text-on-primary-fixed mb-4 inline-block opacity-80 hover:opacity-100 transition-opacity" href="index.html">
+                    VoyageCurator
+                </a>
+<p class="text-on-surface-variant dark:text-on-tertiary-fixed-variant mt-2 max-w-xs">
+                    Curating extraordinary journeys for the discerning traveler.
+                </p>
+</div>
+<!-- Links -->
+<div class="md:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-4">
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:underline transition-all block" href="#">Newsletter</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:underline transition-all block" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:underline transition-all block" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:underline transition-all block" href="#">FAQ</a>
+</div>
+<!-- Copyright -->
+<div class="md:col-span-1 flex items-end md:justify-end mt-8 md:mt-0 text-on-surface-variant dark:text-on-tertiary-fixed-variant text-sm">
+                © 2024 VoyageCurator Advisory. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
